@@ -1,0 +1,23 @@
+视频教程：
+智能社-JavaScript视频【石川blue讲师】
+https://www.bilibili.com/video/av30494570/?p=1
+
+Vue2.0到3.x小白入门教程(基础+实战+vuex+axios+全网最火教程)
+https://www.bilibili.com/video/av44699553/?p=1
+
+VueCli3实战项目-还原饿了么订餐app(短信验证码登录和高德定位)
+https://www.bilibili.com/video/av44677623/?p=1
+
+vue教程_2019年vue视频教程 6小时学会Vue+Vuex+MintUi+ElementUi入门实战视频教程（30讲）
+https://www.bilibili.com/video/av38393323/?p=1
+
+JavaScript深入浅出：
+https://www.imooc.com/video/5673
+
+作业1：
+用vue-router + vue +vuex +axios  重构  之前电商APP项目。（App一个webview，  vue-router控制跳转，axios获取数据， vuex管理状态）
+vuex教程（https://www.bilibili.com/video/av38393323/?p=29）
+
+作业2：
+https://github.com/wssss/cli-project/blob/master/src/components/Pager.vue  简单版。
+https://github.com/wssss/Django-Vue-SPA/blob/master/frontend/src/components/pagination.vue  高级版。
