@@ -75,3 +75,54 @@ css/js多行注释
         return null;
     }
 ```
+
+### 对象数组通过对象的属性进行排序
+```javascript
+var infoObj=[
+            {
+                name:"张三",
+                sex:'female',
+                age:30
+            },
+            {
+                name:"李四",
+                sex:'male',
+                age:20
+            },
+            {
+                name:"王五",
+                sex:'female',
+                age:40
+            }
+        ];
+        // 指定排序的比较函数
+    function compare(property){
+         return function(obj1,obj2){
+             var value1 = obj1[property];
+             var value2 = obj2[property];
+             return value1 - value2;     // 升序
+         }
+    }
+    var sortObj = infoObj.sort(compare("age"));
+    console.log(sortObj);
+```
+
+### 解析对象数组
+```javascript
+function parseJson(arr){
+    if(arr.length!=0){
+        function pp(arr){
+            for(var i=0;i<arr.length;i++){
+                if(arr[i].children && arr[i].children.length!=0){
+                    console.log(arr[i].name);//这里可以写菜单的样式结构...
+                    pp(arr[i].children);
+                }else{
+                    console.log(arr[i].name);//这里可以写菜单的样式结构...
+                }
+            }
+        }
+        pp(arr);
+    }
+}
+parseJson(arr);
+```
