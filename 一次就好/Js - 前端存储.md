@@ -30,14 +30,38 @@
    
 ### 前端存储数据的几种方式
 
-1. cookie
-   1. 为了解决早起浏览器无法管理管理用户状态的问题
-   2. cookie是纯文本方式的数据存储方式
-   3. 辨别用户身份 [session](https://blog.csdn.net/think2me/article/details/38726429)跟踪保存用户登录状态
-   4. 
-2. localstorage
-3. sessionStorage
-4. indexedDB
-5. WebSQL
-6. UserData
+- cookie
+   1. 为了解决什么问题？
+      - 为了解决早起浏览器无法管理管理用户状态的问题
+   2. cookie是什么
+      - cookie是纯文本方式的数据存储方式
+   3. cookie有什么用
+      - 辨别用户身份 [session](https://blog.csdn.net/think2me/article/details/38726429)
+      - 跟踪保存用户登录状态
+   4. cookie如何工作及注意事项
+      - 每个http请求都会request header 的cookie字段中添加本地cookie 此特点关系到适合存储的数据类型 
+      - 多浏览器cookie存储位置并不相同 不通用
+      - cookie的存储是以域名的形式区分的
+      - 我们能操作的域是当前域和当前域下的子域
+      - 每个域名下的cookie存储数量是有限制的 不用浏览器有不同的限制 一般为20个
+      - 每个cookie大小不同浏览器之间有不同的限制 一般限制为4kb
+      - cookie的过期时间一般为会话结束时自动销毁 可以自主设定
+   5. cookie的增删改查
+      - 设置
+        - 客户端设置
+            ```
+            document.cookie = '名字=值';
+            document.cookie = 'username=cfangxu;domain=baike.baidu.com'    并且设置了生效域
+            ``` 
+            > 注意： 客户端可以设置cookie 的下列选项：expires、domain、path、secure（有条件：只有在https协议的网页中，客户端设置secure类型的 cookie 才能成功），但无法设置HttpOnly选项。
+        - 服务器端设置
+        - 
+      - 删
+      - 改
+      - 查
+1. localstorage
+2. sessionStorage
+3. indexedDB
+4. WebSQL
+5. UserData
    

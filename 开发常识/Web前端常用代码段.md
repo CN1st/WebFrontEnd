@@ -126,3 +126,8 @@ function parseJson(arr){
 }
 parseJson(arr);
 ```
+
+### 跨域请求静态资源
+```javascript
+    <meta name="referrer" content="never">
+```
